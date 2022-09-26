@@ -38,6 +38,7 @@ namespace Civ6LanguageXlsConverter
         static void Main(string[] args)
         {
             InfoMessage("Author:HaoJun0823:https://blog.haojun0823.xyz/");
+            InfoMessage("Project:Github:https://github.com/HaoJun0823/Civ6LanguageConverter");
             InfoMessage("Used dependencies:Open-XML-SDK / Copyright (c) .NET Foundation and Contributors / MIT License / https://github.com/OfficeDev/Open-XML-SDK");
             InfoMessage("Used dependencies:ExcelNumberFormat / Copyright (c) 2017 andersnm / MIT License / https://github.com/andersnm/ExcelNumberFormat");
             InfoMessage("Used dependencies:ClosedXML / Copyright (c) 2016 ClosedXML / MIT License / https://github.com/ClosedXML/ClosedXML");

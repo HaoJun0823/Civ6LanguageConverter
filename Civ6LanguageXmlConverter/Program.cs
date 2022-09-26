@@ -26,6 +26,7 @@ namespace Civ6LanguageXmlConverter
         static void Main(string[] args)
         {
             InfoMessage("Author:HaoJun0823:https://blog.haojun0823.xyz/");
+            InfoMessage("Project:Github:https://github.com/HaoJun0823/Civ6LanguageConverter");
             InfoMessage("Used dependencies:Open-XML-SDK / Copyright (c) .NET Foundation and Contributors / MIT License / https://github.com/OfficeDev/Open-XML-SDK");
             InfoMessage("Used dependencies:ExcelNumberFormat / Copyright (c) 2017 andersnm / MIT License / https://github.com/andersnm/ExcelNumberFormat");
             InfoMessage("Used dependencies:ClosedXML / Copyright (c) 2016 ClosedXML / MIT License / https://github.com/ClosedXML/ClosedXML");
@@ -201,7 +202,7 @@ namespace Civ6LanguageXmlConverter
         static void OutputXls()
         {
             string filename = Path.GetFileName(DirectoryPath);
-            InfoMessage("Save xml:" + System.AppDomain.CurrentDomain.BaseDirectory + filename + ".xlsx");
+            InfoMessage("Save xlsx:" + System.AppDomain.CurrentDomain.BaseDirectory + filename + ".xlsx");
             XLWorkbook book = new XLWorkbook();
             IXLWorksheet sheet =  book.Worksheets.Add(TableSheet, "Civ6LanguageXmlConverter_V000");
             sheet.Cells().Style.Alignment.SetWrapText(true);
@@ -213,7 +214,6 @@ namespace Civ6LanguageXmlConverter
             sheet.Column(3).Width = 48;
             sheet.Column(4).Width = 16;
             sheet.Column(5).Width = 128;
-
 
             book.SaveAs(System.AppDomain.CurrentDomain.BaseDirectory + filename+".xlsx");
             
