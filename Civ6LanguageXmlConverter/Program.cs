@@ -143,7 +143,7 @@ namespace Civ6LanguageXmlConverter
 
                         for(int i = 0; i < list.Count; i++)
                         {
-                            AddGameText(Path.GetFileName(file), list.Item(0).ChildNodes);
+                            AddGameText(Path.GetFileName(file), list.Item(i).ChildNodes);
                         }
 
                         
@@ -151,7 +151,7 @@ namespace Civ6LanguageXmlConverter
                         InfoMessage("Found " + list.Count + " <LocalizedText>!");
                         for (int i = 0; i < list.Count; i++)
                         {
-                            AddGameText(Path.GetFileName(file), list.Item(0).ChildNodes);
+                            AddGameText(Path.GetFileName(file), list.Item(i).ChildNodes);
                         }
                     }
                     
